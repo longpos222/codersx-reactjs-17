@@ -1,0 +1,37 @@
+* p {
+  /* font-family: 'Rotobo'; */
+  letter-spacing: 3px;}
+
+.task-list {
+  padding: 0px 20px ;
+  font-weight: bold;
+  text-align: left;
+  color: white
+}
+
+.task-list p {
+  font-size: 0.7rem;
+  margin-left: 10px;
+}
+
+.finished-list p{
+  margin-top: 35px;
+}
+
+.upcoming-list .todo-item{
+  color: black;
+  border-radius: 5px;
+  padding:15px 20px;
+  margin: 10px 0;
+  filter: drop-shadow(0px 0px 2px #4c8c96);
+}
+
+.finished-list .todo-item{
+  background-color: #8FD3DD;
+  text-decoration: line-through;
+  border-radius: 5px;
+  padding:15px 20px;
+  margin: 10px 0;
+  box-shadow: inset;
+  filter: drop-shadow(0px 0px 2px #4c8c96);
+}

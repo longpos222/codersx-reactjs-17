@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; 
 import "./App.css";
 import TaskList from "./TaskList";
 import AddButton from "./AddButton";
@@ -6,11 +6,11 @@ import Modal from "./Modal";
 
 import homeImage from "../white.svg";
 
-const dataList = [
-  { finished: false, id: 1, text: "working on project" },
-  { finished: true, id: 2, text: "Doing Homework" },
-  { finished: false, id: 3, text: "learning" },
-];
+// const dataList = [
+//   { finished: false, id: 1, text: "working on project" },
+//   { finished: true, id: 2, text: "Doing Homework" },
+//   { finished: false, id: 3, text: "learning" },
+// ];
 
 function App() {
   const [dataList, setDataList] = useState([]);
@@ -32,7 +32,11 @@ function App() {
 
   const [modal, setModal] = useState({ isDisplay: "none" });
   const handleOpenModal = (modal) => {
-    setModal((modal) => (modal = { isDisplay: "block" }));
+    setModal((modal) => (modal = { isDisplay: "flex" }));
+  };
+
+  const handleCloseModal = (modal) => {
+    setModal((modal) => (modal = { isDisplay: "none" }));
   };
 
   const [newItem, setNewItem] = useState({});
@@ -66,6 +70,7 @@ function App() {
         handleChange={handleChange}
         handleAddNew={handleAddNew}
         nextIDNumber={dataList.length + 1}
+        handleCloseModal={handleCloseModal}
       />
     </div>
   );

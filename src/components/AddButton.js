@@ -8,7 +8,7 @@ export default function AddButton(props) {
         className="add-icon" 
         onClick={props.onAddButton}
       >
-        <p>+</p>
+        <span>+</span>
       </button>
     </div>
   );
